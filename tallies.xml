@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<tallies>
+
+  <tally>
+    <id>1</id>
+    <filter>
+     <type>mesh</type>
+     <bins> 1 </bins>
+    </filter>
+    <filter>
+     <type>energy</type>
+     <bins>  0.000E0 6.250E-6 1.012E-4  5.000E-2 2.000E1 </bins>
+    </filter>
+    <scores>nu-fission flux-y3 total-y3</scores>
+    <estimator>tracklength</estimator>
+  </tally>
+
+  <tally>
+    <id>2</id>
+    <filter>
+     <type>mesh</type>
+     <bins> 1 </bins>
+    </filter>
+    <filter>
+     <type>energy</type>
+     <bins>  0.000E0 6.250E-6 1.012E-4  5.000E-2 2.000E1 </bins>
+    </filter>
+    <filter>
+     <type>energyout</type>
+     <bins>  0.000E0 6.250E-6 1.012E-4  5.000E-2 2.000E1 </bins>
+    </filter>
+    <scores>nu-scatter-p3 nu-scatter-y3</scores>
+  </tally>
+
+  <mesh>
+    <id>1</id>
+    <type>rectangular</type>
+    <dimension>1 1 16</dimension>
+    <lower_left> -100.0 -100.0 0.0 </lower_left>
+    <upper_right> 100.0  100.0 0.64 </upper_right>
+  </mesh>
+
+  <assume_separate>false</assume_separate>
+
+</tallies>

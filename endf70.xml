@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<cross_sections>
+  <directory>/opt/xsdata/endf70</directory>
+  <filetype>binary</filetype>
+  <record_length>4096</record_length>
+  <entries>512</entries>
+
+  <!-- Fuels -->
+  <ace_table alias="O-16.71c" awr="15.85751" location="12050" name="8016.71c" path="xdata/endf70a" temperature="5.1704e-08" zaid="8016"/>
+  <ace_table alias="U-234.71c" awr="232.0304" location="6610" name="92234.71c" path="xdata/endf70j" temperature="5.1704e-08" zaid="92234"/>
+  <ace_table alias="U-235.71c" awr="233.0248" location="11327" name="92235.71c" path="xdata/endf70j" temperature="5.1704e-08" zaid="92235"/>
+  <ace_table alias="U-236.71c" awr="234.0178" location="16818" name="92236.71c" path="xdata/endf70j" temperature="5.1704e-08" zaid="92236"/>
+  <ace_table alias="U-238.71c" awr="236.0058" location="24190" name="92238.71c" path="xdata/endf70j" temperature="5.1704e-08" zaid="92238"/>
+  <ace_table awr="15.85751" location="34136" name="o2/u.13t" path="xdata/endf70sab" temperature="5.1704e-08" zaid="0"/>
+  <ace_table awr="236.0058" location="37200" name="u/o2.13t" path="xdata/endf70sab" temperature="5.1704e-08" zaid="0"/>
+
+  <!-- Gap -->
+  <ace_table alias="He-4.71c" awr="3.968219" location="429" name="2004.71c" path="xdata/endf70a" temperature="5.1704e-08" zaid="2004"/>
+
+  <!-- Clad -->
+  <ace_table alias="Cr-50.71c" awr="49.517" location="847" name="24050.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="24050"/>
+  <ace_table alias="Cr-52.71c" awr="51.494" location="4760" name="24052.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="24052"/>
+  <ace_table alias="Cr-53.71c" awr="52.486" location="8161" name="24053.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="24053"/>
+  <ace_table alias="Cr-54.71c" awr="53.476" location="10990" name="24054.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="24054"/>
+  <ace_table alias="Fe-54.71c" awr="53.476" location="16492" name="26054.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="26054"/>
+  <ace_table alias="Fe-56.71c" awr="55.454" location="19974" name="26056.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="26056"/>
+  <ace_table alias="Fe-57.71c" awr="56.446" location="24437" name="26057.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="26057"/>
+  <ace_table alias="Fe-58.71c" awr="57.436" location="27379" name="26058.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="26058"/>
+  <ace_table alias="Zr-90.71c" awr="89.1324" location="47188" name="40090.71c" path="xdata/endf70c" temperature="5.1704e-08" zaid="40090"/>
+  <ace_table alias="Zr-91.71c" awr="90.1247" location="49225" name="40091.71c" path="xdata/endf70c" temperature="5.1704e-08" zaid="40091"/>
+  <ace_table alias="Zr-92.71c" awr="91.1155" location="51364" name="40092.71c" path="xdata/endf70c" temperature="5.1704e-08" zaid="40092"/>
+  <ace_table alias="Zr-94.71c" awr="93.0996" location="54984" name="40094.71c" path="xdata/endf70c" temperature="5.1704e-08" zaid="40094"/>
+  <ace_table alias="Zr-96.71c" awr="95.0844" location="57855" name="40096.71c" path="xdata/endf70c" temperature="5.1704e-08" zaid="40096"/>
+  <ace_table alias="Sn-112.71c" awr="110.944" location="4356" name="50112.71c" path="xdata/endf70e" temperature="5.1704e-08" zaid="50112"/>
+  <ace_table alias="Sn-114.71c" awr="112.925" location="10984" name="50114.71c" path="xdata/endf70e" temperature="5.1704e-08" zaid="50114"/>
+  <ace_table alias="Sn-115.71c" awr="113.916" location="12148" name="50115.71c" path="xdata/endf70e" temperature="5.1704e-08" zaid="50115"/>
+  <ace_table alias="Sn-116.71c" awr="114.906" location="13378" name="50116.71c" path="xdata/endf70e" temperature="5.1704e-08" zaid="50116"/>
+  <ace_table alias="Sn-117.71c" awr="115.899" location="15534" name="50117.71c" path="xdata/endf70e" temperature="5.1704e-08" zaid="50117"/>
+  <ace_table alias="Sn-118.71c" awr="116.889" location="16750" name="50118.71c" path="xdata/endf70e" temperature="5.1704e-08" zaid="50118"/>
+  <ace_table alias="Sn-119.71c" awr="117.882" location="17543" name="50119.71c" path="xdata/endf70e" temperature="5.1704e-08" zaid="50119"/>
+  <ace_table alias="Sn-120.71c" awr="118.872" location="18940" name="50120.71c" path="xdata/endf70e" temperature="5.1704e-08" zaid="50120"/>
+  <ace_table alias="Sn-122.71c" awr="120.856" location="21329" name="50122.71c" path="xdata/endf70e" temperature="5.1704e-08" zaid="50122"/>
+  <ace_table alias="Sn-124.71c" awr="122.841" location="24952" name="50124.71c" path="xdata/endf70e" temperature="5.1704e-08" zaid="50124"/>
+  <ace_table alias="Sn-126.71c" awr="124.826" location="28491" name="50126.71c" path="xdata/endf70e" temperature="5.1704e-08" zaid="50126"/>
+  <ace_table alias="Hf-174.71c" awr="172.446" location="1887" name="72174.71c" path="xdata/endf70i" temperature="5.1704e-08" zaid="72174"/>
+  <ace_table alias="Hf-176.71c" awr="174.430" location="2324" name="72176.71c" path="xdata/endf70i" temperature="5.1704e-08" zaid="72176"/>
+  <ace_table alias="Hf-177.71c" awr="175.423" location="3266" name="72177.71c" path="xdata/endf70i" temperature="5.1704e-08" zaid="72177"/>
+  <ace_table alias="Hf-178.71c" awr="176.415" location="4733" name="72178.71c" path="xdata/endf70i" temperature="5.1704e-08" zaid="72178"/>
+  <ace_table alias="Hf-179.71c" awr="177.409" location="5470" name="72179.71c" path="xdata/endf70i" temperature="5.1704e-08" zaid="72179"/>
+  <ace_table alias="Hf-180.71c" awr="178.401" location="6546" name="72180.71c" path="xdata/endf70i" temperature="5.1704e-08" zaid="72180"/>
+
+  <!-- Borated Water -->
+  <ace_table alias="H-1.71c" awr="0.999167" freegas_cutoff="-1.0" location="18" name="1001.71c" path="xdata/endf70a" temperature="5.1704e-08" zaid="1001"/>
+  <ace_table alias="B-10.71c" awr="9.926921" location="6814" name="5010.71c" path="xdata/endf70a" temperature="5.1704e-08" zaid="5010"/>
+  <ace_table alias="B-11.71c" awr="10.9147" location="7541" name="5011.71c" path="xdata/endf70a" temperature="5.1704e-08" zaid="5011"/>
+  <ace_table awr="0.999167" location="22984" name="lwtr.16t" path="xdata/endf70sab" temperature="5.1704e-08" zaid="0"/>
+
+  <!-- Pyrex -->
+  <ace_table alias="Si-28.71c" awr="27.737" location="21649" name="14028.71c" path="xdata/endf70a" temperature="5.1704e-08" zaid="14028"/>
+  <ace_table alias="Si-29.71c" awr="28.728" location="24261" name="14029.71c" path="xdata/endf70a" temperature="5.1704e-08" zaid="14029"/>
+  <ace_table alias="Si-30.71c" awr="29.716" location="26640" name="14030.71c" path="xdata/endf70a" temperature="5.1704e-08" zaid="14030"/>
+
+
+  <!-- Stainless -->
+  <ace_table alias="C-Nat.71c" awr="11.898" location="8877" name="6000.71c" path="xdata/endf70a" temperature="5.1704e-08" zaid="6000"/>
+  <ace_table alias="P-31.71c" awr="30.708" location="28341" name="15031.71c" path="xdata/endf70a" temperature="5.1704e-08" zaid="15031"/>
+  <ace_table alias="Mn-55.71c" awr="54.4661" location="13668" name="25055.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="25055"/>
+  <ace_table alias="Ni-58.71c" awr="57.438" location="33156" name="28058.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="28058"/>
+  <ace_table alias="Ni-60.71c" awr="59.416" location="40128" name="28060.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="28060"/>
+  <ace_table alias="Ni-61.71c" awr="60.408" location="44085" name="28061.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="28061"/>
+  <ace_table alias="Ni-62.71c" awr="61.396" location="46510" name="28062.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="28062"/>
+  <ace_table alias="Ni-64.71c" awr="63.379" location="48787" name="28064.71c" path="xdata/endf70b" temperature="5.1704e-08" zaid="28064"/>
+
+  <!-- AIC -->
+  <ace_table alias="Ag-107.71c" awr="105.987" location="54537" name="47107.71c" path="xdata/endf70d" temperature="5.1704e-08" zaid="47107"/>
+  <ace_table alias="Ag-109.71c" awr="107.969" location="58255" name="47109.71c" path="xdata/endf70d" temperature="5.1704e-08" zaid="47109"/>
+  <ace_table alias="Cd-106.71c" awr="104.996" location="65734" name="48106.71c" path="xdata/endf70d" temperature="5.1704e-08" zaid="48106"/>
+  <ace_table alias="Cd-108.71c" awr="106.977" location="67152" name="48108.71c" path="xdata/endf70d" temperature="5.1704e-08" zaid="48108"/>
+  <ace_table alias="Cd-110.71c" awr="108.959" location="68202" name="48110.71c" path="xdata/endf70d" temperature="5.1704e-08" zaid="48110"/>
+  <ace_table alias="Cd-111.71c" awr="109.951" location="69792" name="48111.71c" path="xdata/endf70d" temperature="5.1704e-08" zaid="48111"/>
+  <ace_table alias="Cd-112.71c" awr="110.942" location="71987" name="48112.71c" path="xdata/endf70d" temperature="5.1704e-08" zaid="48112"/>
+  <ace_table alias="Cd-113.71c" awr="111.930" location="74188" name="48113.71c" path="xdata/endf70d" temperature="5.1704e-08" zaid="48113"/>
+  <ace_table alias="Cd-114.71c" awr="112.925" location="77638" name="48114.71c" path="xdata/endf70d" temperature="5.1704e-08" zaid="48114"/>
+  <ace_table alias="Cd-116.71c" awr="114.909" location="80763" name="48116.71c" path="xdata/endf70d" temperature="5.1704e-08" zaid="48116"/>
+  <ace_table alias="In-113.71c" awr="111.934" location="352" name="49113.71c" path="xdata/endf70e" temperature="5.1704e-08" zaid="49113"/>
+  <ace_table alias="In-115.71c" awr="113.917" location="2227" name="49115.71c" path="xdata/endf70e" temperature="5.1704e-08" zaid="49115"/>
+
+  <!-- B4C: already done -->
+
+  <!-- WABA -->
+  <ace_table alias="Al-27.71c" awr="26.74975" location="19280" name="13027.71c" path="xdata/endf70a" temperature="5.1704e-08" zaid="13027"/>
+
+  <!-- Gd -->
+  <ace_table alias="Gd-152.71c" awr="150.615" location="1023" name="64152.71c" path="xdata/endf70h" temperature="5.1704e-08" zaid="64152"/>
+  <ace_table alias="Gd-153.71c" awr="151.608" location="5390" name="64153.71c" path="xdata/endf70h" temperature="5.1704e-08" zaid="64153"/>
+  <ace_table alias="Gd-154.71c" awr="152.599" location="9191" name="64154.71c" path="xdata/endf70h" temperature="5.1704e-08" zaid="64154"/>
+  <ace_table alias="Gd-155.71c" awr="153.592" location="14263" name="64155.71c" path="xdata/endf70h" temperature="5.1704e-08" zaid="64155"/>
+  <ace_table alias="Gd-156.71c" awr="154.583" location="17531" name="64156.71c" path="xdata/endf70h" temperature="5.1704e-08" zaid="64156"/>
+  <ace_table alias="Gd-157.71c" awr="155.576" location="21605" name="64157.71c" path="xdata/endf70h" temperature="5.1704e-08" zaid="64157"/>
+  <ace_table alias="Gd-158.71c" awr="156.567" location="25390" name="64158.71c" path="xdata/endf70h" temperature="5.1704e-08" zaid="64158"/>
+  <ace_table alias="Gd-160.71c" awr="158.553" location="29431" name="64160.71c" path="xdata/endf70h" temperature="5.1704e-08" zaid="64160"/>
+
+</cross_sections>

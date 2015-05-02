@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<geometry>
+
+  <surface id="0" type="z-plane" coeffs="0.0   " boundary="reflective" />
+  <surface id="1" type="z-plane" coeffs="0.4" />
+  <surface id="2" type="z-plane" coeffs="0.48" />
+  <surface id="3" type="z-plane" coeffs="0.64" boundary="reflective"/>
+
+  <!-- Reflective surfaces for x, y directions -->
+  <surface id="20" type="x-plane" coeffs="-100" boundary="reflective"/>
+  <surface id="21" type="x-plane" coeffs=" 100" boundary="reflective"/>
+  <surface id="22" type="y-plane" coeffs="-100" boundary="reflective"/>
+  <surface id="23" type="y-plane" coeffs=" 100" boundary="reflective"/>
+
+  <!-- Combine to surfaces to make pin cell -->
+  <cell id="1"  material="1" surfaces="0 -1 20 -21 22 -23" />
+  <cell id="2"  material="2" surfaces="1 -2 20 -21 22 -23" />
+  <cell id="3"  material="3" surfaces="2 -3 20 -21 22 -23" />
+
+</geometry>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<materials>
+  <!-- Set default xs set to 71c, which is ENDF-B/VII.0 at 600K -->
+  <default_xs>71c</default_xs>
+
+  <!-- 3.1 w/o enriched UO2 -->
+  <material id="1">
+    <density units="sum" />
+    <nuclide name="U-235"   ao="7.18132E-4" />
+    <nuclide name="U-238"   ao="2.21546E-2" />
+    <nuclide name="O-16"    ao="4.57642E-2" />
+  </material>
+
+  <!-- Cladding -->
+  <material id="2">
+    <density units="sum" />
+    <nuclide name="Zr-90"  ao="2.18865E-2" />
+    <nuclide name="Zr-91"  ao="4.77292E-3" />
+    <nuclide name="Zr-92"  ao="7.29551E-3" />
+    <nuclide name="Zr-94"  ao="7.39335E-3" />
+    <nuclide name="Zr-96"  ao="1.19110E-3" />
+</material>
+
+  <!-- Water -->
+  <material id="3">
+    <density units="sum" />
+    <nuclide name="O-16"   ao="2.20729E-2" />
+    <nuclide name="H-1"    ao="4.41459E-2" />
+    <!--
+      Set the thermal scattering table to H-H20
+      16t is the library for 600K
+    -->
+    <sab name="lwtr" xs="16t" />
+  </material>
+
+</materials>
