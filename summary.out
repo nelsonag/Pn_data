@@ -1,0 +1,176 @@
+
+ ===========================================================================
+ ====================>     OPENMC MONTE CARLO CODE     <====================
+ ===========================================================================
+
+ Copyright:     2011-2015 Massachusetts Institute of Technology
+ Version:       0.6.2
+ Git SHA1:      417d5f497db8e307284164c9fee0130ab586892d
+ Date/Time:     2015-05-02 12:03:02
+ MPI Processes: 1
+
+ ========================>     PROBLEM SUMMARY     <========================
+
+ Problem type:                    k eigenvalue
+ Number of Batches:                     10100
+ Number of Inactive Batches:              100
+ Generations per Batch:                     1
+ Number of Particles:                     100
+
+ =======================>     GEOMETRY SUMMARY     <========================
+
+ Number of Cells:                           3
+ Number of Surfaces:                        8
+ Number of Materials:                       3
+
+ ========================>     SURFACE SUMMARY     <========================
+
+ Surface 0          
+     Type = Z Plane
+     Coefficients =  0.0
+     Positive Neighbors =  1
+     Negative Neighbors =
+     Boundary Condition = Reflective
+
+ Surface 1          
+     Type = Z Plane
+     Coefficients =  0.4000
+     Positive Neighbors =  2
+     Negative Neighbors = 1
+     Boundary Condition = Transmission
+
+ Surface 2          
+     Type = Z Plane
+     Coefficients =  0.4800
+     Positive Neighbors =  3
+     Negative Neighbors = 2
+     Boundary Condition = Transmission
+
+ Surface 3          
+     Type = Z Plane
+     Coefficients =  0.6400
+     Positive Neighbors = 
+     Negative Neighbors = 3
+     Boundary Condition = Reflective
+
+ Surface 20         
+     Type = X Plane
+     Coefficients =  -100.0
+     Positive Neighbors =  1 2 3
+     Negative Neighbors =
+     Boundary Condition = Reflective
+
+ Surface 21         
+     Type = X Plane
+     Coefficients =  100.0
+     Positive Neighbors = 
+     Negative Neighbors = 1 2 3
+     Boundary Condition = Reflective
+
+ Surface 22         
+     Type = Y Plane
+     Coefficients =  -100.0
+     Positive Neighbors =  1 2 3
+     Negative Neighbors =
+     Boundary Condition = Reflective
+
+ Surface 23         
+     Type = Y Plane
+     Coefficients =  100.0
+     Positive Neighbors = 
+     Negative Neighbors = 1 2 3
+     Boundary Condition = Reflective
+
+
+ =========================>     CELL SUMMARY     <==========================
+
+ Cell 1          
+     Array Index = 1          
+     Universe = 0          
+     Fill = NONE
+     Material = 1          
+     Surface Specification: 0 -1 20 -21 22 -23
+
+ Cell 2          
+     Array Index = 2          
+     Universe = 0          
+     Fill = NONE
+     Material = 2          
+     Surface Specification: 1 -2 20 -21 22 -23
+
+ Cell 3          
+     Array Index = 3          
+     Universe = 0          
+     Fill = NONE
+     Material = 3          
+     Surface Specification: 2 -3 20 -21 22 -23
+
+
+ =======================>     UNIVERSE SUMMARY     <========================
+
+ Universe 0          
+     Base Universe
+     Cells = 1 2 3
+
+
+ =======================>     MATERIAL SUMMARY     <========================
+
+ Material 1          
+     Atom Density = 6.86369E-02 atom/b-cm
+     Nuclides:
+          92235.71c = 7.18132E-04 atom/b-cm
+          92238.71c = 2.21546E-02 atom/b-cm
+           8016.71c = 4.57642E-02 atom/b-cm
+
+ Material 2          
+     Atom Density = 4.25394E-02 atom/b-cm
+     Nuclides:
+          40090.71c = 2.18865E-02 atom/b-cm
+          40091.71c = 4.77292E-03 atom/b-cm
+          40092.71c = 7.29551E-03 atom/b-cm
+          40094.71c = 7.39335E-03 atom/b-cm
+          40096.71c = 1.19110E-03 atom/b-cm
+
+ Material 3          
+     Atom Density = 6.62188E-02 atom/b-cm
+     Nuclides:
+           8016.71c = 2.20729E-02 atom/b-cm
+           1001.71c = 4.41459E-02 atom/b-cm
+     S(a,b) tables:
+         lwtr.16t
+
+
+ =========================>     TALLY SUMMARY     <=========================
+
+ Tally 1          
+     Type: Volume
+     Estimator: Track-length
+     Mesh Bins: 1 x 1 x 16
+     Incoming Energy Bins: 0.0 6.25000E-06 1.01200E-04 5.00000E-02 20.0000
+     Nuclide Bins: total
+     Scores: flux flux-y1 flux-y2 flux-y3 flux flux-y1 flux-y2 flux-y3
+
+ Tally 2          
+     Type: Volume
+     Estimator: Analog
+     Mesh Bins: 1 x 1 x 16
+     Incoming Energy Bins: 0.0 6.25000E-06 1.01200E-04 5.00000E-02 20.0000
+     Outgoing Energy Bins: 0.0 6.25000E-06 1.01200E-04 5.00000E-02 20.0000
+     Nuclide Bins: total
+     Scores: nu-scatter nu-scatter-p1 nu-scatter-p2 nu-scatter-p3 nu-scatter nu-scatter-y1 nu-scatter-y2 nu-scatter-y3
+
+ Tally 3          
+     Type: Volume
+     Estimator: Analog
+     Mesh Bins: 1 x 1 x 16
+     Incoming Energy Bins: 0.0 6.25000E-06 1.01200E-04 5.00000E-02 20.0000
+     Outgoing Energy Bins: 0.0 6.25000E-06 1.01200E-04 5.00000E-02 20.0000
+     Nuclide Bins: total
+     Scores: nu-fission
+
+
+ ======================>     VARIANCE REDUCTION     <=======================
+
+ Survival Biasing:                off
+ Weight Cutoff:                   0.250000
+ Survival weight:                 1.00000

@@ -1,0 +1,574 @@
+
+ =====================>     CROSS SECTION TABLES     <======================
+
+ Nuclide  92235.71c
+   zaid = 92235
+   awr = 233.025
+   kT = 5.17040E-08
+   # of grid points = 60641
+   Fissionable =  T
+   # of fission reactions = 1
+   # of reactions = 49
+   Reaction     Q-value  COM  Law    IE    size(angle) size(energy)
+   (n,elastic)    0.000   T   None      1       69752           0
+   (n,2n)        -5.298   T   44    60583           0       53832
+   (n,3n)       -12.142   T   44    60615           0       15624
+   (n,fission)  193.483   F   4         1           0      270896
+   (n,4n)       -17.886   T   44    60636           0        2584
+   (n,n1)        -0.000   T   3     60212        3912          16
+   (n,n2)        -0.013   T   3     60271        3480          16
+   (n,n3)        -0.046   T   3     60328       41216          16
+   (n,n4)        -0.051   T   3     60339        2728          16
+   (n,n5)        -0.082   T   3     60384        3400          16
+   (n,n6)        -0.103   T   3     60411       33048          16
+   (n,n7)        -0.134   T   3     60417        2520          16
+   (n,n8)        -0.171   T   3     60424       26624          16
+   (n,n9)        -0.174   T   3     60427        3272          16
+   (n,n10)       -0.249   T   3     60443       20408          16
+   (n,n11)       -0.293   T   3     60449        2784          16
+   (n,n12)       -0.334   T   3     60456        2448          16
+   (n,n13)       -0.365   T   3     60460        2856          16
+   (n,n14)       -0.398   T   3     60465        2872          16
+   (n,n15)       -0.430   T   3     60471       14784          16
+   (n,n16)       -0.448   T   3     60473        2968          16
+   (n,n17)       -0.550   T   3     60486       14424          16
+   (n,n18)       -0.650   T   3     60493       13152          16
+   (n,n19)       -0.770   T   3     60498       13176          16
+   (n,n20)       -0.900   T   3     60504       12496          16
+   (n,n21)       -1.062   T   3     60510       13608          16
+   (n,n22)       -1.170   T   3     60515       14264          16
+   (n,n23)       -1.250   T   3     60519       13376          16
+   (n,n24)       -1.440   T   3     60523       13296          16
+   (n,n25)       -1.590   T   3     60526       12960          16
+   (n,n26)       -1.750   T   3     60531       12672          16
+   (n,n27)       -1.850   T   3     60534       12288          16
+   (n,n28)       -1.950   T   3     60536       11776          16
+   (n,n29)       -2.150   T   3     60539       11512          16
+   (n,n30)       -2.300   T   3     60542       11032          16
+   (n,n31)       -2.390   T   3     60545        8096          16
+   (n,n32)       -2.493   T   3     60548       11456          16
+   (n,n33)       -2.940   T   3     60552       10920          16
+   (n,n34)       -3.189   T   3     60556       10680          16
+   (n,n35)       -3.388   T   3     60559       10288          16
+   (n,n36)       -3.538   T   3     60562       10048          16
+   (n,n37)       -3.637   T   3     60565        9928          16
+   (n,n38)       -3.737   T   3     60567        9784          16
+   (n,n39)       -3.837   T   3     60570        9784          16
+   (n,n40)       -3.909   T   3     60572        9368          16
+   (n,nc)        -0.498   T   44    60479           0      102776
+   (n,gamma)      6.545   F   None      1           0           0
+   (damage)       0.000   F   None      1           0           0
+   (n,level)      0.000   F   None  60212           0           0
+   Unresolved resonance probability table:
+     # of energies = 14
+     # of probabilities = 20
+     Interpolation =  2
+     Inelastic flag = 4
+     Absorption flag = -1
+     Multiply by smooth?  T
+     Min energy = 2.25000E-03
+     Max energy = 2.50000E-02
+   Memory Requirements
+     Cross sections = 1940512 bytes
+     Secondary angle distributions = 519456 bytes
+     Secondary energy distributions = 446352 bytes
+     Probability Tables = 13552 bytes
+     Total = 2919872 bytes
+
+ Nuclide  92238.71c
+   zaid = 92238
+   awr = 236.006
+   kT = 5.17040E-08
+   # of grid points = 133964
+   Fissionable =  T
+   # of fission reactions = 1
+   # of reactions = 48
+   Reaction     Q-value  COM  Law    IE    size(angle) size(energy)
+   (n,elastic)    0.000   T   None      1       78592           0
+   (n,2n)        -6.153   T   44   133858           0      105032
+   (n,3n)       -11.279   T   44   133885           0       52456
+   (n,fission)  198.032   F   4         1           0      386616
+   (n,4n)       -17.824   T   44   133914           0       19712
+   (n,n1)        -0.045   T   3    133544       53480          16
+   (n,n2)        -0.148   T   3    133653       36616          16
+   (n,n3)        -0.307   T   3    133676       29208          16
+   (n,n4)        -0.518   T   3    133698        6728          16
+   (n,n5)        -0.680   T   3    133712        8040          16
+   (n,n6)        -0.732   T   3    133715        5992          16
+   (n,n7)        -0.776   T   3    133718        5200          16
+   (n,n8)        -0.827   T   3    133722        5432          16
+   (n,n9)        -0.926   T   3    133727        9248          16
+   (n,n10)       -0.931   T   3    133730        7944          16
+   (n,n11)       -0.950   T   3    133734        6280          16
+   (n,n12)       -0.966   T   3    133738        5800          16
+   (n,n13)       -0.967   T   3    133740        6136          16
+   (n,n14)       -0.993   T   3    133742        9352          16
+   (n,n15)       -0.998   T   3    133745        5512          16
+   (n,n16)       -1.037   T   3    133749        5992          16
+   (n,n17)       -1.057   T   3    133752        5320          16
+   (n,n18)       -1.060   T   3    133754        5416          16
+   (n,n19)       -1.060   T   3    133756        6064          16
+   (n,n20)       -1.077   T   3    133759        3848          16
+   (n,n21)       -1.106   T   3    133762        5240          16
+   (n,n22)       -1.170   T   3    133770       26424          16
+   (n,n23)       -1.250   T   3    133777       26856          16
+   (n,n24)       -1.440   T   3    133783       25336          16
+   (n,n25)       -1.590   T   3    133791       24904          16
+   (n,n26)       -1.750   T   3    133796       24520          16
+   (n,n27)       -1.850   T   3    133799       24112          16
+   (n,n28)       -1.950   T   3    133802       23552          16
+   (n,n29)       -2.150   T   3    133806       23096          16
+   (n,n30)       -2.300   T   3    133811       22448          16
+   (n,n31)       -2.390   T   3    133814       15552          16
+   (n,n32)       -2.493   T   3    133817       23640          16
+   (n,n33)       -2.940   T   3    133824       22912          16
+   (n,n34)       -3.189   T   3    133828       22456          16
+   (n,n35)       -3.388   T   3    133831       21800          16
+   (n,n36)       -3.538   T   3    133834       21512          16
+   (n,n37)       -3.637   T   3    133837       21368          16
+   (n,n38)       -3.737   T   3    133840       21032          16
+   (n,n39)       -3.837   T   3    133842       21008          16
+   (n,n40)       -3.909   T   3    133844       20448          16
+   (n,nc)        -1.113   T   44   133764           0      234256
+   (n,gamma)      4.806   F   None      1           0           0
+   (damage)       0.000   F   None      1           0           0
+   Unresolved resonance probability table:
+     # of energies = 18
+     # of probabilities = 20
+     Interpolation =  2
+     Inelastic flag = 51
+     Absorption flag = -1
+     Multiply by smooth?  T
+     Min energy = 2.00000E-02
+     Max energy = 0.149029
+   Memory Requirements
+     Cross sections = 4286848 bytes
+     Secondary angle distributions = 744416 bytes
+     Secondary energy distributions = 798712 bytes
+     Probability Tables = 17424 bytes
+     Total = 5847400 bytes
+
+ Nuclide   8016.71c
+   zaid = 8016
+   awr = 15.8575
+   kT = 5.17040E-08
+   # of grid points = 2865
+   Fissionable =  F
+   # of fission reactions = 0
+   # of reactions = 69
+   Reaction     Q-value  COM  Law    IE    size(angle) size(energy)
+   (n,elastic)    0.000   T   None      1      813976           0
+   MT=5           0.000   T   44     2762           0       43208
+   (n,2n)       -15.664   T   44     2574           0       30800
+   (n,na)        -7.162   T   44     2134           0       84688
+   (n,n3a)      -14.437   T   44     2569           0       29448
+   (n,np)       -12.128   T   44     2447           0       50176
+   (n,nd)       -20.736   T   44     2702           0       13656
+   (n,2np)      -22.961   T   44     2729           0        7640
+   (n,n2p)      -22.335   T   44     2721           0        7680
+   (n,npa)      -23.119   T   44     2733           0        7240
+   (n,n1)        -6.049   T   3      1866       11792          16
+   (n,n2)        -6.130   T   3      1921       11792          16
+   (n,n3)        -6.917   T   3      2101        8768          16
+   (n,n4)        -7.117   T   3      2128        8664          16
+   (n,n5)        -8.872   T   3      2266        8776          16
+   (n,n6)       -10.957   T   3      2395           0          16
+   (n,n7)       -11.080   T   3      2402           0          16
+   (n,nc)        -9.585   T   44     2305           0       71048
+   (n,gamma)      4.143   F   None      1           0           0
+   (n,p)         -9.637   F   None   2310           0           0
+   (n,d)         -9.903   F   None   2328           0           0
+   (n,t)        -14.479   F   None   2545           0           0
+   (n,a)         -2.214   F   None    597           0           0
+   (n,2a)       -12.863   F   None   2480           0           0
+   (n,pa)       -19.749   F   None   2678           0           0
+   (n,Xp)         0.000   F   None   2310           0           0
+   (n,Xd)         0.000   F   None   2327           0           0
+   (n,Xt)         0.000   F   None   2544           0           0
+   (n,Xa)         0.000   F   None    597           0           0
+   (damage)       0.000   F   None      1           0           0
+   (n,p0)        -9.637   F   None   2310           0           0
+   (n,p1)        -9.757   F   None   2320           0           0
+   (n,p2)        -9.934   F   None   2334           0           0
+   (n,p3)       -10.034   F   None   2340           0           0
+   (n,d0)        -9.903   F   None   2328           0           0
+   (n,d1)       -15.173   F   None   2562           0           0
+   (n,d2)       -15.202   F   None   2563           0           0
+   (n,d3)       -16.227   F   None   2588           0           0
+   (n,d4)       -17.058   F   None   2611           0           0
+   (n,d5)       -17.204   F   None   2615           0           0
+   (n,d6)       -17.470   F   None   2622           0           0
+   (n,d7)       -18.216   F   None   2638           0           0
+   (n,d8)       -18.474   F   None   2647           0           0
+   (n,d9)       -18.953   F   None   2657           0           0
+   (n,d10)      -19.055   F   None   2659           0           0
+   (n,d11)      -19.058   F   None   2661           0           0
+   (n,d12)      -19.128   F   None   2663           0           0
+   (n,d13)      -19.663   F   None   2673           0           0
+   (n,d14)      -19.732   F   None   2676           0           0
+   (n,d15)      -19.831   F   None   2681           0           0
+   (n,d16)      -19.973   F   None   2683           0           0
+   (n,d17)      -20.353   F   None   2692           0           0
+   (n,d18)      -20.436   F   None   2694           0           0
+   (n,d19)      -20.596   F   None   2697           0           0
+   (n,t0)       -14.479   F   None   2545           0           0
+   (n,t1)       -16.792   F   None   2604           0           0
+   (n,t2)       -18.427   F   None   2644           0           0
+   (n,t3)       -19.394   F   None   2668           0           0
+   (n,t4)       -19.585   F   None   2671           0           0
+   (n,t5)       -20.170   F   None   2686           0           0
+   (n,t6)       -20.313   F   None   2690           0           0
+   (n,t7)       -20.683   F   None   2699           0           0
+   (n,t8)       -20.925   F   None   2707           0           0
+   (n,t9)       -21.508   F   None   2712           0           0
+   (n,tc)       -21.508   F   None   2712           0           0
+   (n,a0)        -2.214   F   None    597           0           0
+   (n,a1)        -5.305   F   None   1597           0           0
+   (n,a2)        -5.900   F   None   1786           0           0
+   (n,a3)        -6.069   F   None   1884           0           0
+   Memory Requirements
+     Cross sections = 91680 bytes
+     Secondary angle distributions = 863768 bytes
+     Secondary energy distributions = 345696 bytes
+     Probability Tables = 0 bytes
+     Total = 1301144 bytes
+
+ Nuclide  40090.71c
+   zaid = 40090
+   awr = 89.1324
+   kT = 5.17040E-08
+   # of grid points = 4769
+   Fissionable =  F
+   # of fission reactions = 0
+   # of reactions = 80
+   Reaction     Q-value  COM  Law    IE    size(angle) size(energy)
+   (n,elastic)    0.000   T   None      1       54984           0
+   (n,2n)       -11.970   T   61     4759           0       25232
+   (n,na)        -6.671   T   61     4756           0       49256
+   (n,np)        -8.355   T   61     4753           0       57880
+   (n,n1)        -1.761   T   3      4697       23712          16
+   (n,n2)        -2.186   T   3      4702       17040          16
+   (n,n3)        -2.319   T   3      4706        3328          16
+   (n,n4)        -2.739   T   3      4715        3120          16
+   (n,n5)        -2.748   T   3      4716       14880          16
+   (n,n6)        -3.077   T   3      4724       10696          16
+   (n,n7)        -3.309   T   3      4729       15920          16
+   (n,n8)        -3.448   T   3      4733        2808          16
+   (n,n9)        -3.557   T   3      4735        2808          16
+   (n,n10)       -3.589   T   3      4739        2704          16
+   (n,nc)        -1.273   T   61     4691           0      331928
+   (n,gamma)      7.194   F   None      1           0           0
+   (n,p)          0.000   F   None   4713           0           0
+   (n,a)          0.000   F   None   4700           0           0
+   (n,Xp)         0.000   F   None   4712           0           0
+   (n,Xa)         0.000   F   None   4700           0           0
+   (damage)       0.000   F   None      1           0           0
+   (n,p0)        -1.498   F   None   4713           0           0
+   (n,p1)        -1.700   F   None   4720           0           0
+   (n,p2)        -2.180   F   None   4737           0           0
+   (n,p3)        -2.275   F   None   4737           0           0
+   (n,p4)        -2.452   F   None   4740           0           0
+   (n,p5)        -2.545   F   None   4741           0           0
+   (n,p6)        -2.688   F   None   4741           0           0
+   (n,p7)        -2.710   F   None   4741           0           0
+   (n,p8)        -2.796   F   None   4742           0           0
+   (n,p9)        -2.869   F   None   4742           0           0
+   (n,p10)       -2.915   F   None   4743           0           0
+   (n,p11)       -3.060   F   None   4743           0           0
+   (n,p12)       -3.070   F   None   4743           0           0
+   (n,p13)       -3.139   F   None   4743           0           0
+   (n,p14)       -3.259   F   None   4744           0           0
+   (n,p15)       -3.309   F   None   4744           0           0
+   (n,p16)       -3.313   F   None   4744           0           0
+   (n,pc)        -3.313   F   None   4745           0           0
+   (n,a0)         1.756   F   None   4700           0           0
+   (n,a1)         1.367   F   None   4709           0           0
+   (n,a2)         0.883   F   None   4720           0           0
+   (n,a3)         0.528   F   None   4726           0           0
+   (n,a4)         0.502   F   None   4726           0           0
+   (n,a5)         0.016   F   None   4740           0           0
+   (n,a6)         0.014   F   None   4740           0           0
+   (n,a7)        -0.014   F   None   4740           0           0
+   (n,a8)        -0.164   F   None   4741           0           0
+   (n,a9)        -0.354   F   None   4742           0           0
+   (n,a10)       -0.398   F   None   4742           0           0
+   (n,a11)       -0.413   F   None   4742           0           0
+   (n,a12)       -0.480   F   None   4743           0           0
+   (n,a13)       -0.506   F   None   4743           0           0
+   (n,a14)       -0.658   F   None   4743           0           0
+   (n,a15)       -0.664   F   None   4743           0           0
+   (n,a16)       -0.732   F   None   4744           0           0
+   (n,a17)       -0.777   F   None   4744           0           0
+   (n,a18)       -0.780   F   None   4744           0           0
+   (n,a19)       -0.783   F   None   4744           0           0
+   (n,a20)       -0.794   F   None   4744           0           0
+   (n,a21)       -0.799   F   None   4744           0           0
+   (n,a22)       -0.840   F   None   4744           0           0
+   (n,a23)       -0.875   F   None   4745           0           0
+   (n,a24)       -0.900   F   None   4745           0           0
+   (n,a25)       -0.921   F   None   4745           0           0
+   (n,a26)       -0.923   F   None   4745           0           0
+   (n,a27)       -0.926   F   None   4745           0           0
+   (n,a28)       -0.952   F   None   4745           0           0
+   (n,a29)       -1.047   F   None   4745           0           0
+   (n,a30)       -1.063   F   None   4745           0           0
+   (n,a31)       -1.065   F   None   4745           0           0
+   (n,a32)       -1.075   F   None   4745           0           0
+   (n,a33)       -1.095   F   None   4745           0           0
+   (n,a34)       -1.137   F   None   4746           0           0
+   (n,a35)       -1.148   F   None   4746           0           0
+   (n,a36)       -1.165   F   None   4746           0           0
+   (n,a37)       -1.165   F   None   4746           0           0
+   (n,a38)       -1.185   F   None   4746           0           0
+   (n,a39)       -1.224   F   None   4746           0           0
+   (n,ac)        -1.224   F   None   4747           0           0
+   Memory Requirements
+     Cross sections = 152608 bytes
+     Secondary angle distributions = 152000 bytes
+     Secondary energy distributions = 464456 bytes
+     Probability Tables = 0 bytes
+     Total = 769064 bytes
+
+ Nuclide  40091.71c
+   zaid = 40091
+   awr = 90.1247
+   kT = 5.17040E-08
+   # of grid points = 14874
+   Fissionable =  F
+   # of fission reactions = 0
+   # of reactions = 33
+   Reaction     Q-value  COM  Law    IE    size(angle) size(energy)
+   (n,elastic)    0.000   T   None      1       39448           0
+   (n,2n)        -7.203   T   61    14743           0       66296
+   (n,3n)       -19.186   T   61    14872           0        7072
+   (n,na)        -5.452   T   61    14754           0       58128
+   (n,np)        -8.709   T   61    14776           0       54096
+   (n,nd)       -13.344   T   61    14834           0       23416
+   (n,n1)        -1.205   T   3     14178        1432          16
+   (n,n2)        -1.466   T   3     14195       10568          16
+   (n,n3)        -1.882   T   3     14232       10224          16
+   (n,n4)        -2.042   T   3     14262       10264          16
+   (n,n5)        -2.131   T   3     14294       10528          16
+   (n,n6)        -2.170   T   3     14311         880          16
+   (n,n7)        -2.190   T   3     14322        1312          16
+   (n,n8)        -2.201   T   3     14326         976          16
+   (n,n9)        -2.260   T   3     14348         808          16
+   (n,n10)       -2.288   T   3     14357         760          16
+   (n,n11)       -2.320   T   3     14373        8584          16
+   (n,n12)       -2.356   T   3     14392        8320          16
+   (n,n13)       -2.367   T   3     14399        8224          16
+   (n,n14)       -2.395   T   3     14408        8368          16
+   (n,nc)        -2.395   T   61    14411           0      109264
+   (n,gamma)      8.635   F   None      1           0           0
+   (n,p)         -0.761   F   None  14169           0           0
+   (n,d)         -6.484   F   None  14731           0           0
+   (n,t)         -7.087   F   None  14754           0           0
+   (n,3He)       -8.557   F   None  14791           0           0
+   (n,a)          5.672   F   None  14107           0           0
+   (n,Xp)         0.000   F   None  14168           0           0
+   (n,Xd)         0.000   F   None  14731           0           0
+   (n,Xt)         0.000   F   None  14754           0           0
+   (n,X3He)       0.000   F   None  14791           0           0
+   (n,Xa)         0.000   F   None  14107           0           0
+   (damage)       0.000   F   None      1           0           0
+   Unresolved resonance probability table:
+     # of energies = 8
+     # of probabilities = 20
+     Interpolation =  2
+     Inelastic flag = -1
+     Absorption flag = -1
+     Multiply by smooth?  F
+     Min energy = 2.00000E-02
+     Max energy = 9.99999E-02
+   Memory Requirements
+     Cross sections = 475968 bytes
+     Secondary angle distributions = 120696 bytes
+     Secondary energy distributions = 318496 bytes
+     Probability Tables = 7744 bytes
+     Total = 922904 bytes
+
+ Nuclide  40092.71c
+   zaid = 40092
+   awr = 91.1155
+   kT = 5.17040E-08
+   # of grid points = 13499
+   Fissionable =  F
+   # of fission reactions = 0
+   # of reactions = 35
+   Reaction     Q-value  COM  Law    IE    size(angle) size(energy)
+   (n,elastic)    0.000   T   None      1       47504           0
+   (n,2n)        -8.635   T   61    12455           0       54000
+   (n,3n)       -15.838   T   61    13196           0       13680
+   (n,na)        -2.967   T   61    11541           0       81048
+   (n,np)        -9.400   T   61    12645           0       46048
+   (n,nd)       -15.035   T   61    13192           0       12488
+   (n,nt)       -15.711   T   61    13197           0       10560
+   (n,n1)        -0.934   T   3     11228       10112          16
+   (n,n2)        -1.383   T   3     11285       15984          16
+   (n,n3)        -1.495   T   3     11306         776          16
+   (n,n4)        -1.847   T   3     11359        9448          16
+   (n,n5)        -2.067   T   3     11394        1184          16
+   (n,n6)        -2.150   T   3     11406        1184          16
+   (n,n7)        -2.340   T   3     11448        7928          16
+   (n,n8)        -2.398   T   3     11466         752          16
+   (n,n9)        -2.486   T   3     11476         704          16
+   (n,n10)       -2.744   T   3     11499         848          16
+   (n,n11)       -2.820   T   3     11509        8856          16
+   (n,n12)       -2.864   T   3     11525         752          16
+   (n,n13)       -2.904   T   3     11531        1832          16
+   (n,n14)       -2.909   T   3     11533         944          16
+   (n,n15)       -2.958   T   3     11539         704          16
+   (n,n16)       -3.040   T   3     11547        8656          16
+   (n,n17)       -3.058   T   3     11551        1184          16
+   (n,nc)        -3.058   T   61    11553           0      109296
+   (n,gamma)      6.732   F   None      1           0           0
+   (n,p)         -2.852   F   None  11541           0           0
+   (n,d)         -7.090   F   None  12161           0           0
+   (n,t)         -8.850   F   None  12597           0           0
+   (n,a)          3.401   F   None  11146           0           0
+   (n,Xp)         0.000   F   None  11541           0           0
+   (n,Xd)         0.000   F   None  12161           0           0
+   (n,Xt)         0.000   F   None  12597           0           0
+   (n,Xa)         0.000   F   None  11146           0           0
+   (damage)       0.000   F   None      1           0           0
+   Unresolved resonance probability table:
+     # of energies = 3
+     # of probabilities = 20
+     Interpolation =  2
+     Inelastic flag = -1
+     Absorption flag = -1
+     Multiply by smooth?  F
+     Min energy = 7.10000E-02
+     Max energy = 9.99999E-02
+   Memory Requirements
+     Cross sections = 431968 bytes
+     Secondary angle distributions = 119352 bytes
+     Secondary energy distributions = 327392 bytes
+     Probability Tables = 2904 bytes
+     Total = 881616 bytes
+
+ Nuclide  40094.71c
+   zaid = 40094
+   awr = 93.0996
+   kT = 5.17040E-08
+   # of grid points = 13427
+   Fissionable =  F
+   # of fission reactions = 0
+   # of reactions = 31
+   Reaction     Q-value  COM  Law    IE    size(angle) size(energy)
+   (n,elastic)    0.000   T   None      1       41888           0
+   (n,2n)        -8.191   T   61    12512           0       83864
+   (n,3n)       -14.950   T   61    13176           0       29016
+   (n,na)        -3.751   T   61    11962           0      105528
+   (n,np)       -10.331   T   61    12812           0       58712
+   (n,nd)       -15.502   T   61    13203           0       10328
+   (n,n1)        -0.919   T   3     11568       11776          16
+   (n,n2)        -1.300   T   3     11613        2608          16
+   (n,n3)        -1.470   T   3     11637        1072          16
+   (n,n4)        -1.671   T   3     11664        1648          16
+   (n,n5)        -2.058   T   3     11721        9032          16
+   (n,n6)        -2.151   T   3     11736        1600          16
+   (n,n7)        -2.330   T   3     11774        1000          16
+   (n,n8)        -2.366   T   3     11786        1600          16
+   (n,n9)        -2.508   T   3     11809       10184          16
+   (n,n10)       -2.604   T   3     11818         928          16
+   (n,n11)       -2.699   T   3     11827        2008          16
+   (n,n12)       -2.826   T   3     11846        1600          16
+   (n,n13)       -2.846   T   3     11850        2008          16
+   (n,n14)       -2.861   T   3     11858        9944          16
+   (n,nc)        -2.861   T   61    11861           0      139416
+   (n,gamma)      6.471   F   None      1           0           0
+   (n,p)         -4.099   F   None  11962           0           0
+   (n,d)         -8.020   F   None  12517           0           0
+   (n,t)         -9.316   F   None  12683           0           0
+   (n,a)          2.056   F   None  11497           0           0
+   (n,Xp)         0.000   F   None  11962           0           0
+   (n,Xd)         0.000   F   None  12517           0           0
+   (n,Xt)         0.000   F   None  12683           0           0
+   (n,Xa)         0.000   F   None  11497           0           0
+   (damage)       0.000   F   None      1           0           0
+   Unresolved resonance probability table:
+     # of energies = 2
+     # of probabilities = 20
+     Interpolation =  2
+     Inelastic flag = -1
+     Absorption flag = -1
+     Multiply by smooth?  F
+     Min energy = 9.00000E-02
+     Max energy = 9.99999E-02
+   Memory Requirements
+     Cross sections = 429664 bytes
+     Secondary angle distributions = 98896 bytes
+     Secondary energy distributions = 427088 bytes
+     Probability Tables = 1936 bytes
+     Total = 957584 bytes
+
+ Nuclide  40096.71c
+   zaid = 40096
+   awr = 95.0844
+   kT = 5.17040E-08
+   # of grid points = 8090
+   Fissionable =  F
+   # of fission reactions = 0
+   # of reactions = 23
+   Reaction     Q-value  COM  Law    IE    size(angle) size(energy)
+   (n,elastic)    0.000   T   None      1       38832           0
+   (n,2n)        -7.832   T   61     7169           0       86936
+   (n,3n)       -14.306   T   61     7936           0       34136
+   (n,na)        -4.975   T   61     6689           0       87056
+   (n,np)       -11.505   T   61     7629           0       50448
+   (n,n1)        -1.594   T   3      6179        2632          16
+   (n,n2)        -1.750   T   3      6204       10752          16
+   (n,n3)        -1.897   T   3      6236        9408          16
+   (n,n4)        -2.226   T   3      6308        2008          16
+   (n,n5)        -2.330   T   3      6335        1600          16
+   (n,n6)        -2.440   T   3      6365        1984          16
+   (n,n7)        -2.857   T   3      6434        1240          16
+   (n,nc)        -2.857   T   61     6432           0      136032
+   (n,gamma)      5.581   F   None      1           0           0
+   (n,p)         -6.232   F   None   6789           0           0
+   (n,d)         -9.195   F   None   7424           0           0
+   (n,t)         -9.937   F   None   7424           0           0
+   (n,a)          0.490   F   None   5978           0           0
+   (n,Xp)         0.000   F   None   6788           0           0
+   (n,Xd)         0.000   F   None   7424           0           0
+   (n,Xt)         0.000   F   None   7424           0           0
+   (n,Xa)         0.000   F   None   5978           0           0
+   (damage)       0.000   F   None      1           0           0
+   Memory Requirements
+     Cross sections = 258880 bytes
+     Secondary angle distributions = 68456 bytes
+     Secondary energy distributions = 394720 bytes
+     Probability Tables = 0 bytes
+     Total = 722056 bytes
+
+ Nuclide   1001.71c
+   zaid = 1001
+   awr = 0.999167
+   kT = 5.17040E-08
+   # of grid points = 590
+   Fissionable =  F
+   # of fission reactions = 0
+   # of reactions = 4
+   Reaction     Q-value  COM  Law    IE    size(angle) size(energy)
+   (n,elastic)    0.000   T   None      1       10320           0
+   (n,gamma)      2.225   F   None      1           0           0
+   (n,Xd)         0.000   F   None      1           0           0
+   (damage)       0.000   F   None    388           0           0
+   Memory Requirements
+     Cross sections = 18880 bytes
+     Secondary angle distributions = 10320 bytes
+     Secondary energy distributions = 0 bytes
+     Probability Tables = 0 bytes
+     Total = 29200 bytes
+
+ S(a,b) Table   lwtr.16t
+   zaids = 1001 
+   awr = 0.999167
+   kT = 5.17040E-08
+   # of Incoming Energies (Inelastic) = 116
+   # of Outgoing Energies (Inelastic) = 80
+   # of Outgoing Angles (Inelastic) = 20
+   Threshold for Inelastic = 9.15000E-06
+   Memory Used = 1560896 bytes
+

@@ -11,7 +11,7 @@
      <type>energy</type>
      <bins>  0.000E0 6.250E-6 1.012E-4  5.000E-2 2.000E1 </bins>
     </filter>
-    <scores>nu-fission flux-y3 total-y3</scores>
+    <scores>flux-y3 total-y3</scores>
     <estimator>tracklength</estimator>
   </tally>
 
@@ -30,6 +30,23 @@
      <bins>  0.000E0 6.250E-6 1.012E-4  5.000E-2 2.000E1 </bins>
     </filter>
     <scores>nu-scatter-p3 nu-scatter-y3</scores>
+  </tally>
+
+  <tally>
+    <id>3</id>
+    <filter>
+     <type>mesh</type>
+     <bins> 1 </bins>
+    </filter>
+    <filter>
+     <type>energy</type>
+     <bins>  0.000E0 6.250E-6 1.012E-4  5.000E-2 2.000E1 </bins>
+    </filter>
+    <filter>
+     <type>energyout</type>
+     <bins>  0.000E0 6.250E-6 1.012E-4  5.000E-2 2.000E1 </bins>
+    </filter>
+    <scores>nu-fission</scores>
   </tally>
 
   <mesh>
