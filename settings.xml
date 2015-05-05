@@ -8,7 +8,7 @@
   <eigenvalue>
     <batches>10100</batches>
     <inactive>100</inactive>
-    <particles>100</particles>
+    <particles>10000</particles>
   </eigenvalue>
 
   <!--

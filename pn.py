@@ -17,17 +17,16 @@ def Pn_solve(sigtn, sigsn, Qn, deriv_term):
     # deriv_term+sigtn*psin=sigsn*psin+Qn
     # psin = (Qn-deriv_term)/(sigtn-sigsn)
 
-    psin = (Qn - deriv_term) / (sigtn - sigs)
+    # psin = (Qn - deriv_term) / (sigtn - np.sum(sigsn,axis=0))
+    psin = (Qn - deriv_term) / (sigtn)
 
-    return psin
+    return psin[:]
 
-def solve1g(N, sigtns1g, sigsns1g, Qnsg, psinsg, invdx, n_ratios):
+def solve1g(N, sigtns1g, sigsns1g, Qnsg, psinsg, x, invdx, n_ratios):
     # Loops through each of the n orders, sets up the derivitave term,
     # and calls Pn_solve on it.
 
     # n_ratios is [(n/(2n+1),(n+1)/(2n+1)) for n in range(N+1)]
-
-    deriv_term = np.zeros_like(invdx)
 
     for n in xrange(N+1):
         # N+1 so we get an n==N in this loop
@@ -35,22 +34,54 @@ def solve1g(N, sigtns1g, sigsns1g, Qnsg, psinsg, invdx, n_ratios):
         # Set up the deriv_term.
         # Due to assumed reflective BC, deriv_term will always be 0 for
         # ix ==0 and ix == last one, so we can skip those
-        for ix in range(1, len(invdx) - 1):
-            if n > 0:
-                deriv_term[ix]  = n_ratios[n][0] * \
-                    (psinsg[n - 1,ix + 1] - psinsg[n - 1,ix]) * dx[ix]
-            elif n < N:
-                deriv_term[ix] += n_ratios[n][1] * \
-                    (psinsg[n + 1,ix + 1] - psinsg[n + 1,ix]) * dx[ix]
+        if n > 0:
+            nm1_interp = sint.KroghInterpolator(x, psinsg[n - 1])
+        else:
+            nm1_interp = sint.KroghInterpolator([x[0],x[-1]],[0.0, 0.0])
+        if n < N:
+            np1_interp = sint.KroghInterpolator(x, psinsg[n + 1])
+        else:
+            np1_interp = sint.KroghInterpolator([x[0],x[-1]],[0.0, 0.0])
+        deriv_term = n_ratios[n][0] * nm1_interp.derivative(x) + \
+                     n_ratios[n][1] * np1_interp.derivative(x)
+
+        # Now adjust for BC
+        deriv_term[0] = 0.0
+        deriv_term[-1] = 0.0
 
         # Now we can pass this to Pn_solve to get our new psin values
         psinsg[n,:] = Pn_solve(sigtns1g[n], sigsns1g[n], Qnsg[n], deriv_term)
 
-def fixedsrc(N, G, sigtns, sigsns, Qnsg, psins, invdx, n_ratios):
-    # Not implemented yet. This wll be the MG solver.
-    pass
+    return psinsg[:,:]
 
-def init(x, N):
+def fixedsrc(N, G, sigtns, sigsns, Qns, psins, x, invdx, n_ratios, eps_psi, max_inner):
+    # Not implemented yet. This wll be the MG solver.
+    eps = 1.0E4
+    iter = 0
+    newQns = np.zeros_like(Qns[:,0,:])
+    # import pdb; pdb.set_trace()
+    while ((eps > eps_psi) and (iter <= max_inner)):
+        # Develop scattering source
+        for g in range(G):
+            for n in range(N):
+                for ix in range(len(invdx) + 1):
+                    newQns[n,ix] = Qns[g,n,ix] + \
+                        np.dot(sigsns[:,n,g,ix], psins[:,n,ix])
+            # Run fixed src solver
+            psins[g,:,:] = solve1g(N, sigtns[g,:,:], sigsns[g,:,:,:], newQns,
+                                   psins[g,:,:], x, invdx, n_ratios)
+
+        # eps =
+        iter += 1
+        for g in xrange(G):
+            plt.plot(x,psins[g,0,:],label='Pn')
+            plt.plot(x,omcflux[g,0,:],label='OMC')
+            plt.legend(loc='best')
+            plt.show()
+            plt.close()
+    print "Inner Iterations = " + str(iter)
+
+def init(x, G, N, flux_guess):
     invdx = np.zeros(len(x) - 1)
     for ix in xrange(len(invdx)):
         invdx[ix] = 1.0 / (x[ix + 1] - x[ix])
@@ -58,7 +89,12 @@ def init(x, N):
     n_ratios = [(float(n)/float(2 * n + 1), float(n + 1)/float(2 * n + 1))
                 for n in range(N + 1)]
 
-    return invdx, n_ratios
+    psins = np.ones(shape=(G, N + 1, len(x)))
+    for g in xrange(G):
+        for n in xrange(N + 1):
+            psins[g,n,:] = flux_guess[g,n,:] / np.sum(flux_guess[g,n,:])
+
+    return invdx, n_ratios, psins
 
 def get_openmc_mesh(spFile, tid, sid, G, N, extent):
     sp = StatePoint(spFile)
@@ -103,79 +139,79 @@ def get_openmc_mesh_matrix(spFile, tid, sid, G, N, extent):
 
 def get_omc_mgxs(sp, mesh_tids, mesh_sids, order, G, Nmesh, extent, xstype):
     # Get flux-yN
-    fluxyn = [0.0 for l in range(order)]
+    fluxyn = np.zeros(shape=(order, G, Nmesh))
     for l in range(order):
         tid = mesh_tids[0]
         sid = mesh_sids[0][l]
-        x, fluxyn[l], omck = get_openmc_mesh(sp,tid,sid,G,Nmesh,extent)
+        x, fluxyn[l,:,:], omck = get_openmc_mesh(sp,tid,sid,G,Nmesh,extent)
 
     # Get scatt-pN
-    scattpn = [0.0 for l in range(order)]
+    scattpn = np.zeros(shape=(order, G, G, Nmesh))
     for l in range(order):
         tid = mesh_tids[1]
         sid = mesh_sids[1][l]
-        x, scattpn[l], omck = get_openmc_mesh_matrix(sp,tid,sid,G,Nmesh,extent)
+        x, scattpn[l,:, :, :], omck = get_openmc_mesh_matrix(sp,tid,sid,G,Nmesh,extent)
 
     # Get scatt-yN
-    scattyn = [0.0 for l in range(order)]
+    scattyn = np.zeros(shape=(order, G, G, Nmesh))
     for l in range(order):
         tid = mesh_tids[2]
         sid = mesh_sids[2][l]
-        x, scattyn[l], omck = get_openmc_mesh_matrix(sp,tid,sid,G,Nmesh,extent)
+        x, scattyn[l,:,:,:], omck = get_openmc_mesh_matrix(sp,tid,sid,G,Nmesh,extent)
 
     # Get total-yN
-    totalyn = [0.0 for l in range(order)]
+    totalyn = np.zeros(shape=(order, G, Nmesh))
     for l in range(order):
         tid = mesh_tids[3]
         sid = mesh_sids[3][l]
-        x, totalyn[l], omck = get_openmc_mesh(sp,tid,sid,G,Nmesh,extent)
+        x, totalyn[l,:,:], omck = get_openmc_mesh(sp,tid,sid,G,Nmesh,extent)
 
     # Get nu-fission (right now only doing iso weighting)
-    nusigfns = [None for l in range(order)]
+    nusigfns = np.zeros(shape=(order, G, G, Nmesh))
     tid = mesh_tids[4]
     sid = mesh_sids[4][0]
     # Now only doing iso weighting so l=0
-    x, nusigfns[0], omck = get_openmc_mesh_matrix(sp,tid,sid,G,Nmesh,extent)
-    for l in range(1,order):
-        nusigfns[l] = np.zeros_like(nusigfns[0])
+    x, nusigfns[0,:,:,:], omck = get_openmc_mesh_matrix(sp,tid,sid,G,Nmesh,extent)
 
-
-    Qns = [np.asarray([[0.0 for n in xrange(Nmesh)] for go in xrange(G)]) for l in xrange(order)]
+    Qns = np.zeros(shape=(order, G, Nmesh))
     # put Q in nusigfns, leave as isotropic now
     l = 0
+    Qsum = 0.0
     for go in range(G):
         for n in range(Nmesh):
-            Qns[l][go,n] = 0.0
+            Qns[l,go,n] = 0.0
             for g in range(G):
-                Qns[l][go,n] += nusigfns[0][g,go,n]
+                Qns[l,go,n] += nusigfns[0,g,go,n]
+            Qsum += Qns[l,go,n]
+    Qns[l,:,:] /= Qsum
     for l in range(1,order):
         for g in range(G):
             for n in range(Nmesh):
-                Qns[l][g,n] = 0.0
+                Qns[l,g,n] = 0.0
 
-    totaliso = totalyn[0][:,:]
+    totaliso = totalyn[0,:,:]
     for l in range(order):
         for g in range(G):
             for n in range(Nmesh):
                 # Nmeshormalize by flux
-                flux = fluxyn[l][g,n]
-                flux0 = fluxyn[0][g,n]
+                flux = fluxyn[l,g,n]
+                flux0 = fluxyn[0,g,n]
                 if flux0 != 0.0:
                     for go in range(G):
-                        scattpn[l][g,go,n] /= flux0
+                        scattpn[l,g,go,n] /= flux0
                     if l == 0:
                         totaliso[g,n] /= flux0
                 if flux != 0.0:
                     for go in range(G):
-                        scattyn[l][g,go,n] /= flux
-                        nusigfns[l][g,go,n] /= flux
-                    totalyn[l][g,n] /= flux
+                        scattyn[l,g,go,n] /= flux
+                        nusigfns[l,g,go,n] /= flux
+                    totalyn[l,g,n] /= flux
 
                 # Apply correction
                 if xstype == 'consP':
-                    corr = totaliso[g,n] - totalyn[l][g,n]
+                    corr = totaliso[g,n] - totalyn[l,g,n]
                     for go in range(G):
-                        scattyn[l][g,go,n] += corr
+                        scattyn[l,g,go,n] += corr
 
     if xstype == 'iso':
         sigtns = [totaliso for l in range(order)]
@@ -187,9 +223,8 @@ def get_omc_mgxs(sp, mesh_tids, mesh_sids, order, G, Nmesh, extent, xstype):
         sigtns = totalyn[:]
         sigsns = scattyn[:]
 
-    print totaliso[0]
-
-    return omck, x, sigtns, sigsns, nusigfns, Qns
+    return omck, np.swapaxes(fluxyn,0,1), x, np.swapaxes(sigtns,0,1), \
+        np.swapaxes(sigsns,0,1), np.swapaxes(nusigfns,0,1), np.swapaxes(Qns,0,1)
 
 
 if __name__ == "__main__":
@@ -213,10 +248,12 @@ if __name__ == "__main__":
     show = False
     save = True
     G = 4
-    N = 3
+    N = 1
     Nmesh = 16
     extent = 0.64
-    sp = './statepoint.10000.binary'
+    sp = './statepoint.08000.binary'
+    eps_psi = 1.0E-6
+    max_inner = 2
 
     # First get the mgxs data and create x/s
     if xstype == 'iso':
@@ -232,12 +269,28 @@ if __name__ == "__main__":
     mesh_tids = [0, 1, 1, 0, 2]
     mesh_sids = [[0,2,6,12], [0,1,2,3], [4,6,10,16], [16,18,22,27], [0]]
 
-    omck, x, sigtns, sigsns, nusigfns, Qns = get_omc_mgxs(sp, mesh_tids,
-                                                          mesh_sids, N+1, G,
-                                                          Nmesh, extent, xstype)
+    omck, omcflux, x, sigtns, sigsns, nusigfns, Qns = \
+        get_omc_mgxs(sp, mesh_tids, mesh_sids, N+1, G, Nmesh, extent, xstype)
     print 'OpenMC k_eff=' + "{:12.5E}".format(omck)
 
     # Set up some of our data we will use during the sweep
-    invdx, n_ratios = init(x, N)
+    invdx, n_ratios, psins = init(x, G, N, omcflux)
+
+    if runtype == 'FS':
+        fixedsrc(N, G, sigtns, sigsns, Qns, psins, x, invdx, n_ratios, eps_psi, max_inner)
+        # Estimate k to compare with the openMC k
+        pnk = 0.0
+        for g in xrange(G):
+            for ix in xrange(Nmesh):
+                if Qns[g,0,ix] > 0.0:
+                    pnk += np.sum(nusigfns[g,0,:,ix])*psins[g,0,ix] / Qns[g,0,ix]
+    else:
+        print "k-eigenvalue solver not yet implemented!"
+
+    pcm = 1.0E5*(pnk-omck)/omck
+
+    print "Pn k_eff = " + "{:12.5E}".format(pnk)
+
+    print "pcm = " + "{:12.5E}".format(pcm)
 
 

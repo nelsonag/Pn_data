@@ -6,7 +6,7 @@
  Copyright:     2011-2015 Massachusetts Institute of Technology
  Version:       0.6.2
  Git SHA1:      417d5f497db8e307284164c9fee0130ab586892d
- Date/Time:     2015-05-02 12:03:02
+ Date/Time:     2015-05-02 21:10:17
  MPI Processes: 1
 
  ========================>     PROBLEM SUMMARY     <========================
@@ -15,7 +15,7 @@
  Number of Batches:                     10100
  Number of Inactive Batches:              100
  Generations per Batch:                     1
- Number of Particles:                     100
+ Number of Particles:                   10000
 
  =======================>     GEOMETRY SUMMARY     <========================
 

@@ -1,0 +1,804 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"der",
+				"Qn-deriv_term"
+			],
+			[
+				"mesh",
+				"mesh_sids"
+			],
+			[
+				"mes",
+				"mesh_tids"
+			],
+			[
+				"case",
+				"cases"
+			],
+			[
+				"None",
+				"None"
+			],
+			[
+				"sweep",
+				"sweep_h5"
+			],
+			[
+				"ref",
+				"refpp"
+			],
+			[
+				"ace_sigma",
+				"ace_sigmainel"
+			],
+			[
+				"anlg",
+				"anlg-chi-coll"
+			],
+			[
+				"dl_",
+				"dl_ndpp_chi_tl"
+			],
+			[
+				"dl_n",
+				"dl_ndpp_tl"
+			],
+			[
+				"Tre",
+				"True"
+			],
+			[
+				"da",
+				"dataLocs"
+			],
+			[
+				"an",
+				"anlg-chi-coll"
+			],
+			[
+				"dl",
+				"dl_ndpp_tl"
+			],
+			[
+				"dl_nd",
+				"dl_ndpp_coll"
+			],
+			[
+				"type",
+				"type_str"
+			],
+			[
+				"k",
+				"k-fiss"
+			],
+			[
+				"scatt",
+				"scatt-pN"
+			],
+			[
+				"app",
+				"apply_TrCorr"
+			],
+			[
+				"tota",
+				"total-pN"
+			],
+			[
+				"total",
+				"total_pN"
+			],
+			[
+				"get",
+				"get_openmc_psi"
+			],
+			[
+				"ap",
+				"apply_thresh"
+			],
+			[
+				"adjust",
+				"adjust_nuscatt"
+			],
+			[
+				"print_",
+				"print_MPACT_FluxVolume"
+			],
+			[
+				"nus",
+				"nusigf"
+			],
+			[
+				"nuscatt",
+				"nuscatt_adjusted"
+			],
+			[
+				"adju",
+				"adjust_nuscatt"
+			],
+			[
+				"sigS",
+				"sigs_print"
+			],
+			[
+				"sigs",
+				"sigs_print"
+			],
+			[
+				"dataL",
+				"dataLocs_anlg"
+			],
+			[
+				"ORNL",
+				"ORNLref"
+			],
+			[
+				"chis",
+				"chisum_gerr"
+			],
+			[
+				"ad",
+				"adjust_nuscatt"
+			],
+			[
+				"k_col",
+				"k_col_tra"
+			],
+			[
+				"mpac",
+				"mpact_keff"
+			],
+			[
+				"writ",
+				"write_nuclide"
+			],
+			[
+				"mgxs",
+				"mgxs_tr"
+			],
+			[
+				"sc",
+				"scatt-pN"
+			],
+			[
+				"flux",
+				"flux_type"
+			],
+			[
+				"H",
+				"Hscale"
+			],
+			[
+				"ybou",
+				"ybounds_m"
+			],
+			[
+				"zeros",
+				"zeros_like"
+			],
+			[
+				"mer",
+				"mer"
+			],
+			[
+				"SYM",
+				"SYMLINTHRESH"
+			],
+			[
+				"SYMLO",
+				"SYMLOGNORM"
+			],
+			[
+				"tall",
+				"tally_types"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "pn.py",
+			"settings":
+			{
+				"buffer_size": 9194,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 335.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: t",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/nelsonag/cases/1d/case.py",
+		"/home/nelsonag/git/Pn_data/pn.py",
+		"/home/nelsonag/cases/1d/settings.xml",
+		"/home/nelsonag/cases/1d/geometry.xml",
+		"/home/nelsonag/cases/1d/tallies.xml",
+		"/home/nelsonag/git/dissertation/scripts/postproc/mgxs_common.py",
+		"/home/nelsonag/git/dissertation/scripts/postproc/gen_mgxs.py",
+		"/home/nelsonag/git/dissertation/scripts/postproc/meth_compare.py",
+		"/home/nelsonag/git/dissertation/scripts/postproc/ndpp_analysis.py",
+		"/home/nelsonag/git/dissertation/scripts/postproc/ndpp_data.py",
+		"/home/nelsonag/git/Pn_data/settings.xml",
+		"/home/nelsonag/git/Pn_data/tallies.out",
+		"/home/nelsonag/git/Pn_data/tallies.xml",
+		"/home/nelsonag/cases/1d/flux.py",
+		"/home/nelsonag/git/pn/pn.py",
+		"/home/nelsonag/git/dissertation/scripts/postproc/statepoint.py",
+		"/home/nelsonag/git/dissertation/scripts/postproc/ndpp_ein.py",
+		"/home/nelsonag/cases/1d_old/new_moments/4g/analog/omc/settings.xml",
+		"/home/nelsonag/cases/1d/tallies.out",
+		"/home/nelsonag/git/dissertation/scripts/postproc/mg_figs.py",
+		"/home/nelsonag/git/dissertation/scripts/postproc/ndpp_kT.py",
+		"/home/nelsonag/git/dissertation/scripts/postproc/verify_ndpp.py",
+		"/home/nelsonag/git/dissertation/scripts/postproc/ref_mesh.py",
+		"/home/nelsonag/cases/diss/5x5/ref.py",
+		"/home/nelsonag/cases/journal/ama1b/47g/case.py",
+		"/home/nelsonag/git/dissertation/scripts/postproc/mpact_pp_ref.py",
+		"/home/nelsonag/git/openmc/src/utils/statepoint.py",
+		"/home/nelsonag/cases/journal/verify/run.sh",
+		"/home/nelsonag/git/dissertation/scripts/postproc/gen_figs.py",
+		"/home/nelsonag/Downloads/tallies.xml",
+		"/home/nelsonag/cases/diss/ndpp/2g/test.py",
+		"/home/nelsonag/cases/diss/5x5/timing/mesh/settings.xml",
+		"/home/nelsonag/cases/diss/5x5/ref",
+		"/home/nelsonag/cases/diss/temp_compare/7g/endf70.xml",
+		"/home/nelsonag/git/dissertation/scripts/postproc/mg_analysis.py",
+		"/home/nelsonag/cases/diss/ndpp/2g/ndpp_data.py",
+		"/home/nelsonag/git/dissertation/scripts/etc/tally_compr.py",
+		"/home/nelsonag/git/dissertation/models/conv/2g/1001.71c.g2",
+		"/home/nelsonag/git/dissertation/scripts/etc/mgxs_common.py",
+		"/home/nelsonag/git/ndpp/src/utils/ndpp_data.py",
+		"/home/nelsonag/git/dissertation/thesis/tex/ace/ace.tex",
+		"/home/nelsonag/git/openmc/src/interpolation.F90",
+		"/home/nelsonag/cases/diss/ndpp/2g/1001.71c.g2",
+		"/home/nelsonag/cases/o16/test.py",
+		"/home/nelsonag/cases/rpt/test.py",
+		"/home/nelsonag/bin/ace.py",
+		"/home/nelsonag/git/dissertation/scripts/postproc/mpact_pp.py",
+		"/home/nelsonag/cases/diss/verify/settings4.xml",
+		"/home/nelsonag/cases/diss/verify/settings3.xml",
+		"/home/nelsonag/cases/diss/verify/settings2.xml",
+		"/home/nelsonag/cases/diss/verify/settings1.xml",
+		"/home/nelsonag/cases/diss/verify/tallies3.xml",
+		"/home/nelsonag/cases/diss/verify/settings.xml",
+		"/home/nelsonag/cases/diss/verify/tallies1.xml",
+		"/home/nelsonag/cases/diss/verify/tallies1.",
+		"/home/nelsonag/cases/diss/verify/tallies.xml",
+		"/opt/xsdata/endf70/xsdir",
+		"/home/nelsonag/cases/o16/tallies.xml",
+		"/home/nelsonag/cases/o16/fit.py",
+		"/home/nelsonag/git/dissertation/scripts/postproc/inel_anim.py",
+		"/home/nelsonag/cases/diss/nndc_reduced.xml",
+		"/home/nelsonag/cases/diss/pin/uo2/7g_nuc/7g/omc/tallies.xml",
+		"/home/nelsonag/cases/diss/pin/uo2/7g_nuc/7g/omc/tallies.out",
+		"/home/nelsonag/cases/diss/pin/uo2/7g_nuc/7g/omc/settings.xml",
+		"/home/nelsonag/cases/o16/tallies.out",
+		"/home/nelsonag/cases/diss/pin/uo2/56g/omc/tallies.out",
+		"/home/nelsonag/cases/o16/ndpp.xml",
+		"/home/nelsonag/Dropbox/class/research/aniso/ref_soln/inel_cm.py",
+		"/home/nelsonag/git/openmc/src/physics.F90",
+		"/home/nelsonag/cases/o16/endf70.xml",
+		"/home/nelsonag/cases/o16/settings.xml",
+		"/home/nelsonag/cases/diss/colorset2/4g/mpact/tcp0.vld",
+		"/home/nelsonag/cases/diss/pin/uo2/4g/mpact/p0.vld",
+		"/home/nelsonag/cases/diss/pin/case.py",
+		"/home/nelsonag/cases/diss/colorset/case.py",
+		"/home/nelsonag/cases/diss/new2d/7g/mpact/data.xs",
+		"/home/nelsonag/cases/diss/new2d/7g/mpact/1000.log",
+		"/home/nelsonag/cases/diss/new2d/p0.inp",
+		"/home/nelsonag/cases/mesh_ama1b/56g/case.py",
+		"/home/nelsonag/cases/o16/data.py",
+		"/home/nelsonag/cases/1mat/sss56/sss/pwrmox",
+		"/home/nelsonag/cases/ama1b/2g/case.py",
+		"/home/nelsonag/cases/ama1b/4g/case.py",
+		"/home/nelsonag/cases/ama1b/56g/case.py",
+		"/home/nelsonag/git/sss/matlaboutput.c",
+		"/home/nelsonag/git/sss/collectresults.c",
+		"/home/nelsonag/git/sss/scorefission.c",
+		"/home/nelsonag/git/sss/fission.c",
+		"/opt/xsdata/mcnp6_data.xml",
+		"/home/nelsonag/ndpp_data/4g/endf70.xml",
+		"/home/nelsonag/cases/ihm/meth_compare.py",
+		"/home/nelsonag/cases/o16/2004.71c.g7",
+		"/home/nelsonag/cases/ama1b/urr/omc/settings.xml",
+		"/home/nelsonag/cases/ama1b/urr/omc/tallies.xml",
+		"/home/nelsonag/cases/ihm/run.py",
+		"/home/nelsonag/cases/ama1b/urr/ratios.py",
+		"/home/nelsonag/git/dissertation/scripts/postproc/gen_mgxs.pyc",
+		"/home/nelsonag/cases/ihm/12.xml",
+		"/home/nelsonag/cases/ihm/11.xml",
+		"/home/nelsonag/cases/ihm/10.xml",
+		"/home/nelsonag/cases/ihm/13.xml",
+		"/home/nelsonag/cases/ihm/9.xml",
+		"/home/nelsonag/cases/ihm/8.xml",
+		"/home/nelsonag/cases/ihm/7.xml",
+		"/home/nelsonag/cases/ihm/6.xml",
+		"/home/nelsonag/cases/ihm/5.xml",
+		"/home/nelsonag/cases/ihm/4.xml",
+		"/home/nelsonag/cases/ihm/3.xml",
+		"/home/nelsonag/cases/ihm/2.xml",
+		"/home/nelsonag/cases/ihm/1.xml",
+		"/home/nelsonag/cases/ihm/0.xml",
+		"/home/nelsonag/cases/ihm/endf70.xml",
+		"/home/nelsonag/cases/ihm/geometry.xml",
+		"/home/nelsonag/cases/ihm/materials.xml",
+		"/home/nelsonag/cases/ihm/settings.xml",
+		"/home/nelsonag/cases/ihm/4g/mpact/data.xs",
+		"/home/nelsonag/cases/ihm/p0.inp",
+		"/home/nelsonag/cases/ihm/p1.inp",
+		"/home/nelsonag/cases/ihm/14.xml",
+		"/home/nelsonag/cases/ama1b/4g/omc/materials.xml",
+		"/home/nelsonag/cases/ama1b/4g/omc/settings.xml",
+		"/home/nelsonag/cases/ama1b/geometry.xml",
+		"/home/nelsonag/cases/ama1b/4g/omc/tallies.xml",
+		"/home/nelsonag/cases/ama1b/4g/omc/tallies.out",
+		"/home/nelsonag/ndpp_data/4g/ndpp.xml",
+		"/home/nelsonag/ndpp_data/4g/ndpp_lib.xml",
+		"/home/nelsonag/cases/ama1b/4g/omc/geometry.xml",
+		"/home/nelsonag/cases/ama1b/4g/mpact/anlg.xs"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/nelsonag/git/sss/",
+			"/home/nelsonag/git/sss/*.c",
+			"*.F90"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"N",
+			"L",
+			"None",
+			"flux",
+			"psins",
+			"Qns",
+			"sigsns",
+			"sigtns",
+			"trapz",
+			"distiso",
+			"format",
+			"fvw_keff",
+			"calc_kinf",
+			"H5",
+			"h5vld",
+			"MPACT",
+			"L =",
+			"mpirun -n 4 ",
+			"moment",
+			"ref_pp.pkl",
+			"lo",
+			"data_RE",
+			"xscale",
+			"myg",
+			"ref",
+			"data",
+			"plot_gg",
+			"batchsize",
+			"capthick",
+			"mu",
+			"np.hist",
+			"capsize=6, capthick=1.5",
+			"fmt=None",
+			"champ",
+			"steps-post",
+			"steps",
+			"symlinthresh",
+			"[g,:]",
+			"print",
+			"steps-post",
+			"linestyles=",
+			"pct_d",
+			"bounds",
+			"pickle",
+			"rss_uncs",
+			"print",
+			"binary",
+			"ascii",
+			"lwtr.16t",
+			"40090.71c",
+			"40090.",
+			"40090",
+			"scatt",
+			"'scatt1g1'",
+			"'chi'",
+			"print ",
+			"matrix_subplot",
+			"plot_tallymatrix_subplot",
+			"ticks=",
+			"case",
+			"batch",
+			"subroutine sample_energ",
+			"sample_energ",
+			"sqrt",
+			"entropy",
+			"print",
+			"apply_thresh",
+			"plot_ggMatrix",
+			"def plot_ggMatrix",
+			"apply_thresh",
+			"Lp1",
+			"scipy",
+			"[c][l]:][-1]",
+			"[c][l][g][go][b]",
+			"[c][l][g][b]",
+			"[c][g][b]",
+			".tolist()",
+			"'chi'",
+			"xrange(",
+			"for ic in range(Ncase)",
+			"r:",
+			"l:",
+			"'right'",
+			"'left'",
+			"np.",
+			"StatePoint",
+			"ufloat",
+			"sint",
+			"(filt,cid)",
+			"'cell'",
+			"self.cells",
+			"mesh",
+			"print",
+			"-chi-",
+			"ndpp",
+			"anlg",
+			"_chi_",
+			"ndpp",
+			"anlg",
+			"CHI",
+			"tnu",
+			"wgt2",
+			"ScoreFission",
+			"wgt1",
+			"GCU_RES_FG_CHI",
+			"chi",
+			"RES_TOT_FISS",
+			"lwtr.20t",
+			"inel",
+			"flipud",
+			"NaN",
+			"============================>",
+			"zero[:]",
+			"figdir",
+			"fwv",
+			"SCATT_ORDER_MAX",
+			"t % scatt_order(j)",
+			"scatt_order",
+			"type_str",
+			"chi",
+			"Cell 1",
+			"Cell 6",
+			"Cell 11",
+			"Cell 10",
+			"TALLY 4",
+			"fsi",
+			"psimap",
+			"print"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Nmesh",
+			"order",
+			"0.0",
+			"data",
+			"psinsg",
+			"Qnsg",
+			"sigsns1g",
+			"sigtns1g",
+			"distpn",
+			"",
+			"hi",
+			"ref_data",
+			"ref",
+			"np.histogram",
+			"capsize=3, capthick=1.0",
+			"fmt=\"none\"",
+			"chall",
+			"steps-mid",
+			"[:,g]",
+			"steps-pre",
+			"ls=",
+			"avg_uncs",
+			"el[0]",
+			"'scatt1g'",
+			"'scatt1g1'",
+			"scatt",
+			"np.sqrt",
+			"[c,l,:,-1]",
+			"[c,l,g,go,b]",
+			"[c,l,g,b]",
+			"[c,g,b]",
+			"",
+			"'scatt1g'",
+			"range(",
+			"for case in cases",
+			"rt:",
+			"lt:",
+			"r",
+			"l",
+			"(filt,space)",
+			"filt",
+			"-dchi-",
+			"detpn",
+			"dirpn",
+			"_dchi_",
+			"tot",
+			"fvw",
+			"MAX_ANG_ORDER",
+			"t % moment_order(j)",
+			"moment_order",
+			"casename",
+			"xsregmap",
+			"type_str",
+			"dtype",
+			"'scatt-pN'",
+			"moment_order",
+			"'tot-pN'",
+			"momWgt",
+			"m",
+			"",
+			"prt",
+			"],[",
+			"",
+			"px ",
+			"px",
+			"surf ",
+			"]",
+			"[",
+			"rxn_CM",
+			"wgt",
+			"otre.",
+			"ndpp",
+			"otre",
+			"empty",
+			"data.",
+			"C",
+			"_pkgname",
+			"<bins> 1 2 3 4 5 6 7 8 9 </bins>",
+			"[cid,gin,gout]",
+			"'nuscatt'",
+			",gin",
+			"'nuscatt'",
+			"myXSMesh(ir)",
+			"myXSMesh(3)",
+			"write(18",
+			"write(19",
+			"myXSMesh(4)",
+			"G",
+			"8",
+			"<bins> 1 2 3 4 5 6 7 8 9 10 11 </bins>",
+			"<bins> 1 2 3 </bins>",
+			"max",
+			"<bins>1</bins>",
+			"str(gin)",
+			"'nuscatt'",
+			"[cid,gin,gout]",
+			"'nuscatt'",
+			"self",
+			"<bins> 1 2 3 4 </bins>",
+			"this.",
+			"<bins> 1 2 3 4 5 </bins>",
+			" 13,",
+			" 13",
+			" 14",
+			"15, ",
+			"13",
+			"11",
+			"'scatt-pN'",
+			"'nufiss'",
+			"'kfiss'",
+			"nucl",
+			"anim_dir",
+			"nuc",
+			"tally_m",
+			"va='top'",
+			"{'verticalalignment': 'bottom'}",
+			"E[g + 1] - E[g]",
+			"[t][l][i][g]"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "pn.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9194,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8508,
+								8508
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "pythonimproved",
+							"buffer_scroll_name": "40bb74df",
+							"spell_check": false,
+							"syntax": "Packages/Python Improved/PythonImproved.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1353.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 19.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 88.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pn.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Dropbox/class/sublime_projects/ndpp.sublime-project"
+			],
+			[
+				"diss",
+				"~/git/dissertation/thesis/dissertation.sublime-project"
+			],
+			[
+				"ndpp",
+				"~/Dropbox/class/sublime_projects/ndpp.sublime-project"
+			],
+			[
+				"nd",
+				"~/Dropbox/class/sublime_projects/ndpp.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 134.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
